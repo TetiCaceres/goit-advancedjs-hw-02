@@ -27,9 +27,9 @@ form.addEventListener('submit', event => {
         title: 'OK',
         message: `Fulfilled promise in ${value}ms`,
         position: 'topRight',
-        iconUrl: './img/isSucces.png',
+        iconUrl: 'public/img/isSucces.png',
         backgroundColor: ' #59a10d',
-        titleColor: '#ffffff', 
+        titleColor: '#ffffff', // Колір заголовка
         messageColor: '#ffffff',
       });
     })
@@ -40,9 +40,9 @@ form.addEventListener('submit', event => {
         message: `Rejected promise in ${error}ms`,
         position: 'topRight',
         backgroundColor: '#ef4040', 
-        titleColor: '#ffffff', 
-        messageColor: '#ffffff', 
-        iconUrl: './img/icon.svg',
+        titleColor: '#ffffff', // Колір заголовка
+        messageColor: '#ffffff', // Колір тексту повідомлення
+        iconUrl: 'public/img/icon.svg',
         iconColor: '#ffffff',
       });
     });
