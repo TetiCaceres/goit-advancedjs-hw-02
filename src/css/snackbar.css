@@ -1,0 +1,124 @@
+/* Базові стилі форми */
+.form {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 360px;
+  box-sizing: border-box;
+}
+
+/* Стилізація мітки поля Delay */
+.form > label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  gap: 8px;
+}
+
+/* Normal */
+.form input[type='number'] {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #2e2f42;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* Hover */
+.form input[type='number']:hover {
+  border: 1px solid #000;
+
+}
+
+/* Pressed (Focus) */
+.form input[type='number']:focus {
+  border-color: #5c7dfb;
+}
+
+/* ============================
+   СТАН ГРУПИ КНОПОК (Fieldset)
+   ============================ */
+
+/* Normal */
+.form fieldset {
+  display: flex;
+  justify-content: center;
+  gap: 48px; /* Відстань між радіо-кнопками */
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+  padding: 16px 24px;
+  margin: 0;
+  transition: border-color 0.2s ease;
+}
+
+.form legend {
+  padding: 0 8px;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+/* Hover */
+.form fieldset:hover {
+  border-color: #000000;
+}
+
+/* Стилі для радіо-міток */
+.form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Pressed (Checked Radio) */
+.form input[type='radio'] {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #5c7dfb; 
+}
+
+/* ============================
+   СТАН КНОПКИ (Submit Button)
+   ============================ */
+
+/* Normal */
+.form button[type='submit'] {
+  background-color: #5c7dfb;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover */
+.form button[type='submit']:hover {
+  background-color: #7b95ff; 
+}
+
+.iziToast .iziToast-close {
+  filter: invert(1) brightness(2); /* Робить білим */
+  transform: scale(1.4);           /* Робить більшим */
+}
+
+.iziToast .iziToast-close:hover {
+  transform: scale(1.6);           /* Трохи збільшується при наведенні */
+  opacity: 1;
+}
