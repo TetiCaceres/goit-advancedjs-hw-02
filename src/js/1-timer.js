@@ -68,7 +68,7 @@ const options = {
         backgroundColor: '#ef4040', // Колір фону
         titleColor: '#ffffff', // Колір заголовка
         messageColor: '#ffffff', // Колір тексту повідомлення
-        iconUrl: '/img/icon-copy.svg',
+        iconUrl: 'public/img/icon-copy.svg',
         iconColor: '#ffffff', // Колір іконки
         progressBarColor: '#b51b1b', // Колір смуги прогресу
         timeout: 5000, // Час відображення в мілісекундах

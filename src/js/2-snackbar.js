@@ -29,7 +29,7 @@ form.addEventListener('submit', event => {
         title: 'OK',
         message: `Fulfilled promise in ${value}ms`,
         position: 'topRight',
-        iconUrl: '/img/isSucces.png',
+        iconUrl: '/public/img/isSucces.png',
         backgroundColor: ' #59a10d',
         titleColor: '#ffffff', // Колір заголовка
         messageColor: '#ffffff',
@@ -44,7 +44,7 @@ form.addEventListener('submit', event => {
         backgroundColor: '#ef4040', 
         titleColor: '#ffffff', // Колір заголовка
         messageColor: '#ffffff', // Колір тексту повідомлення
-        iconUrl: '/img/icon.svg',
+        iconUrl: '/public/img/icon.svg',
         iconColor: '#ffffff',
       });
     });
