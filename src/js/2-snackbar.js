@@ -2,6 +2,8 @@
 import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
+
+
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', event => {
@@ -27,7 +29,7 @@ form.addEventListener('submit', event => {
         title: 'OK',
         message: `Fulfilled promise in ${value}ms`,
         position: 'topRight',
-        iconUrl: 'public/img/isSucces.png',
+        iconUrl: '/img/isSucces.png',
         backgroundColor: ' #59a10d',
         titleColor: '#ffffff', // Колір заголовка
         messageColor: '#ffffff',
@@ -42,7 +44,7 @@ form.addEventListener('submit', event => {
         backgroundColor: '#ef4040', 
         titleColor: '#ffffff', // Колір заголовка
         messageColor: '#ffffff', // Колір тексту повідомлення
-        iconUrl: 'public/img/icon.svg',
+        iconUrl: '/img/icon.svg',
         iconColor: '#ffffff',
       });
     });
